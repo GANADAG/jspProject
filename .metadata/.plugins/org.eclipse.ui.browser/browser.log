@@ -1,0 +1,12 @@
+
+3월 03, 2024 11:05:15.39 NEW SESSION
+3월 03, 2024 11:05:15.45 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 03, 2024 12:09:27.18 [2496:4116:0303/120927.183:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 03, 2024 14:26:27.25 [2496:4116:0303/142627.254:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 03, 2024 17:26:28.56 [2496:4116:0303/172628.568:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 03, 2024 17:26:28.76 [2496:4116:0303/172628.766:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 03, 2024 20:33:25.01 [2496:4116:0303/203325.014:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 03, 2024 20:33:25.18 [2496:14320:0303/203325.184:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_NAME_NOT_RESOLVED)
+3월 03, 2024 20:33:25.29 [2496:14320:0303/203325.298:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_NAME_NOT_RESOLVED)
+3월 03, 2024 20:33:27.58 [2496:4116:0303/203327.587:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 03, 2024 20:33:28.22 [2496:3940:0303/203328.223:ERROR:device_event_log_impl.cc(192)] [20:33:28.223] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)

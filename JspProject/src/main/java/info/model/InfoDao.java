@@ -22,7 +22,7 @@ public class InfoDao {
 		try {
 			pstmt=conn.prepareStatement(sql);
 			
-			//?바인딩 해주기
+			//?에 대한 바인딩 해주기
 			pstmt.setString(1, dto.getName());
 			pstmt.setString(2, dto.getAddr());
 			

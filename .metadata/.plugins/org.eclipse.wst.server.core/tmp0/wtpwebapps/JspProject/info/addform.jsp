@@ -17,7 +17,7 @@
 				<tr>
 					<th class="table-success" width="80">이름</th>
 					<td>
-						<input type="text" name="name" palceholder="이름"
+						<input type="text" name="name" placeholder="이름"
 						required="required" class="form-control" style="width:120px">
 					</td>
 				</tr>
@@ -25,7 +25,7 @@
 				<tr>
 					<th class="table-success" width="80">주소</th>
 					<td>
-						<input type="text" name="addr" palceholder="주소"
+						<input type="text" name="addr" placeholder="주소"
 						required="required" class="form-control" style="width:250px">
 					</td>
 				</tr>

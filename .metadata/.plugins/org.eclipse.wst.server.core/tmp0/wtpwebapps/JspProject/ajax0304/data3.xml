@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sist>
+	<stu name="박지나">
+		<java>90</java>
+		<spring>88</spring>
+		<ajax>77</ajax>
+	</stu>
+	<stu name="강우리">
+		<java>77</java>
+		<spring>66</spring>
+		<ajax>99</ajax>
+	</stu>
+	<stu name="김대호">
+		<java>55</java>
+		<spring>65</spring>
+		<ajax>78</ajax>
+	</stu>
+</sist>
