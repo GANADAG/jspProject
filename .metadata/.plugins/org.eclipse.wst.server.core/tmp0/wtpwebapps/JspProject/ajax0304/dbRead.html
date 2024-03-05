@@ -25,8 +25,8 @@
 					var s="";
 					$(res).find("team").each(function(i,ele){
 						var n=$(ele);
-						s+="<div class='alert alert-info' style='width:400px'>";
-						s+="No. "+n.attr("num")+",";
+						s+="<div class='alert alert-info' style='width:400px;'>";
+						s+="No. "+n.attr("num")+"<br>";
 						s+="이름: "+n.find("name").text()+"<br>";
 						s+="운전면허: "+n.find("driver").text()+"<br>";
 						s+="주소: "+n.find("addr").text()+"<br>";
@@ -39,42 +39,48 @@
 				}
 			});
 			
+		});
+		
+			//food
 			$(function(){
-				$("btnfood").click(function(){
+				$("#btnfood").click(function(){
 					$.ajax({
 						type:"get",
-						url:"foodtoxml.jsp",
-						dataType:"xml",
-						success:function(res){
-							var n="";
-							$(res).find("food").each(function(i,ele){
-								var n=$(ele);
-								n+="<div class='alert alert-info' style='width:400px'>";
-								n+="No. "+n.attr("num")+",";
-								n+="음식이름: "+n.find("foodname").text()+"<br>";
-								n+="음식사진: "+n.find("foodphoto").text()+"<br>";
-								n+="가격: "+n.attr("price")+"<br>";
-								n+="갯수: "+n.attr("cnt");
-								n+="</div>";
+						url:"foodtoxml.jsp",//파싱시킨 xml파일
+						dataType:"xml",//xml아니면json
+						success:function(res){//넘어오는 데이타res
+							
+							var f="";
+							$(res).find("food").each(function(i,ele){//인덱스 엘리먼트
+								var h=$(ele);
+								f+="<div class='alert alert-info' style='width:400px;'><br>";
+								f+="No. "+h.attr("num")+"<br>";
+								f+="음식이름: "+h.find("foodname").text()+"<br>";
+								//f+="음식사진: "+h.find("foodphoto").text()+"<br>";
+								f+="<img src='"+h.find("foodphoto").text()+"' width='100'><br>";
+								f+="가격: "+h.find("price").text()+"원<br>";
+								f+="갯수: "+h.find("cnt").text()+"개<br>";
+								f+="</div>";
 							
 							});
 							
-							$("#show").html(n);
+							$("#show").html(f);
 						}
 					});	
 					
 					})
 				})
-			})
-		})
+			});
+	
 	
 </script>
 </head>
 <body>
+	
 	<h2>xml db읽기</h2>
 	<button type="button" class="btn btn-info" id="btnteam">teamtoxml.jsp읽기</button>
 	
-	<button type="button" class="btn btn-info" id="btnfood">foodtoxml.jsp읽기</button>
+	<button type="button" class="btn btn-danger" id="btnfood">foodtoxml.jsp읽기</button>
 	<div id="show"></div>
 	
 </body>
