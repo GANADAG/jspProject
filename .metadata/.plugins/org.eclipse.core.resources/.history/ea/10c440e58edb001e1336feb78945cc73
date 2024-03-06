@@ -1,0 +1,13 @@
+package intro.model;
+
+import info.model.InfoDto;
+import oracle.db.DbConnect;
+
+public class IntroDao {
+		
+		DbConnect db=new DbConnect();
+		
+		public void infoIntro(InfoDto dto) {
+			
+		}
+}
