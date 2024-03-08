@@ -1,0 +1,14 @@
+127.0.0.1 - - [08/Mar/2024:12:33:34 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:33:34 +0900] "GET /JspProject/ajaxMyWorld/myWorld.html HTTP/1.1" 200 9090
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:33:39 +0900] "GET /JspProject/ajaxMyWorld/worldList.jsp HTTP/1.1" 200 697
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:33:39 +0900] "GET /JspProject/ajaxMyWorld/null HTTP/1.1" 404 842
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:33:44 +0900] "GET /JspProject/ajaxMyWorld/worldDelete.jsp?num=7 HTTP/1.1" 200 485
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:33:44 +0900] "GET /JspProject/ajaxMyWorld/worldList.jsp HTTP/1.1" 200 580
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:33:44 +0900] "GET /JspProject/ajaxMyWorld/null HTTP/1.1" 404 842
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:33:47 +0900] "GET /JspProject/ajaxMyWorld/worldDelete.jsp?num=5 HTTP/1.1" 200 485
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:33:47 +0900] "GET /JspProject/ajaxMyWorld/worldList.jsp HTTP/1.1" 200 456
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:33:47 +0900] "GET /JspProject/ajaxMyWorld/null HTTP/1.1" 404 842
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:33:49 +0900] "GET /JspProject/ajaxMyWorld/worldGetData.jsp?num=4 HTTP/1.1" 200 127
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:34:10 +0900] "POST /JspProject/ajaxMyWorld/worldUpdate.jsp HTTP/1.1" 200 6
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:34:10 +0900] "GET /JspProject/ajaxMyWorld/worldList.jsp HTTP/1.1" 200 456
+0:0:0:0:0:0:0:1 - - [08/Mar/2024:12:34:10 +0900] "GET /JspProject/ajaxMyWorld/null HTTP/1.1" 404 842
