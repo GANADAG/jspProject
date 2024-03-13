@@ -178,3 +178,65 @@
 3월 11, 2024 17:26:00.29 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 3월 11, 2024 17:30:23.81 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 3월 11, 2024 17:32:23.32 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 11, 2024 22:35:45.36 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 12, 2024 24:30:56.81 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 12, 2024 24:46:19.69 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+3월 12, 2024 16:25:22.60 NEW SESSION
+3월 12, 2024 16:25:22.62 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 12, 2024 16:32:50.51 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 12, 2024 16:35:18.07 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 12, 2024 16:35:35.69 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 12, 2024 16:39:34.21 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+3월 13, 2024 09:07:54.47 NEW SESSION
+3월 13, 2024 09:07:54.48 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 13, 2024 09:19:37.02 [11288:4696:0313/091937.024:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 13, 2024 09:19:39.28 [11288:4696:0313/091939.284:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 13, 2024 09:19:39.54 [11288:13584:0313/091939.542:ERROR:device_event_log_impl.cc(192)] [09:19:39.541] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+3월 13, 2024 09:19:39.76 [11288:4696:0313/091939.764:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 13, 2024 09:19:46.12 [11288:4696:0313/091946.129:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:19:49.71 [11288:4696:0313/091949.710:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:25:32.73 [11288:4696:0313/092532.729:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:27:17.71 [11288:4696:0313/092717.712:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:34:01.72 [11288:4696:0313/093401.723:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:34:05.42 [11288:4696:0313/093405.420:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:34:11.80 [11288:4696:0313/093411.799:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:34:28.24 [11288:4696:0313/093428.244:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:35:13.29 [11288:4696:0313/093513.296:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:35:16.90 [11288:4696:0313/093516.903:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:36:26.19 [11288:4696:0313/093626.197:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:38:14.12 [11288:4696:0313/093814.125:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 13, 2024 09:39:21.21 [11288:4696:0313/093921.218:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:39:36.21 [11288:4696:0313/093936.214:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:39:56.17 [11288:4696:0313/093956.175:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:40:01.32 [11288:4696:0313/094001.322:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:40:35.06 [11288:4696:0313/094035.061:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:41:03.31 [11288:4696:0313/094103.310:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:41:09.80 [11288:4696:0313/094109.800:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:41:38.21 [11288:4696:0313/094138.215:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:41:56.71 [11288:4696:0313/094156.719:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:42:01.74 [11288:4696:0313/094201.742:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:42:18.73 [11288:4696:0313/094218.731:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:43:00.24 [11288:4696:0313/094300.247:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:43:06.72 [11288:4696:0313/094306.723:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:43:10.22 [11288:4696:0313/094310.219:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:43:34.68 [11288:4696:0313/094334.685:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:43:41.20 [11288:4696:0313/094341.205:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:43:51.20 [11288:4696:0313/094351.201:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:44:52.21 [11288:4696:0313/094452.210:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:46:17.71 [11288:4696:0313/094617.716:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:46:54.21 [11288:4696:0313/094654.218:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 09:47:43.72 [11288:4696:0313/094743.723:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 13, 2024 10:45:08.86 [11288:13584:0313/104508.866:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 13, 2024 10:48:55.57 [11288:13584:0313/104855.577:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 13, 2024 10:50:19.20 [11288:13584:0313/105019.200:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 13, 2024 10:50:53.49 [11288:13584:0313/105053.496:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 13, 2024 10:53:34.85 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 13, 2024 12:20:48.31 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 13, 2024 13:19:22.41 [1924:1148:0313/131922.413:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 13, 2024 13:49:10.92 [1924:1148:0313/134910.927:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 13, 2024 14:23:36.48 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+3월 13, 2024 23:53:34.05 NEW SESSION
+3월 13, 2024 23:53:34.07 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.

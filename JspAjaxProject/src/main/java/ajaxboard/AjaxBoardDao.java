@@ -137,7 +137,7 @@ public class AjaxBoardDao {
 			
 		}
 		
-		//수정
+		////////44444444수정
 		public void updateBoard(AjaxBoardDto dto) {
 			
 			Connection conn=db.getConnection();
