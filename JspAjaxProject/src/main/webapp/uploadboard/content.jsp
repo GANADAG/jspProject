@@ -57,10 +57,14 @@
 		<div>
 			<tr>
               <td>
-                <input type="submit" value="수정" class="btn btn-outline-warning">
-                <input type="button" value="삭제" class="btn btn-outline-danger">
-                <input type="button" value="추가" class="btn btn-outline-warning"
+                <input type="button" value="글쓰기" class="btn btn-outline-warning"
                 onclick="location.href='addform.jsp'">
+                <input type="button" value="목록" class="btn btn-outline-info"
+                onclick="location.href='boardlist.jsp'">
+                <input type="button" value="수정" class="btn btn-outline-danger"
+                onclick="location.href='updateform.jsp?num=<%=dto.getNum()%>'">
+                <input type="button" value="삭제" class="btn btn-outline-success"
+                onclick="location.href='deleteform.jsp?num=<%=dto.getNum()%>'">
               </td>
             </tr>
 		

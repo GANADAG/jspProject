@@ -7,6 +7,8 @@ C:\sist0103\work\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3
 \JspProject\src\main\java
 C:\sist0103\work\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\768174243.index
 \JspProject\src\main\java
+C:\sist0103\work\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3232886805.index
+\JspAjaxProject\src\main\java
 C:\sist0103\work\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3283937929.index
 \JspAjaxProject\src\main\java
 C:\sist0103\work\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3983860825.index

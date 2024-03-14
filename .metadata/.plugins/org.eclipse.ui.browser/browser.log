@@ -240,3 +240,11 @@
 
 3월 13, 2024 23:53:34.05 NEW SESSION
 3월 13, 2024 23:53:34.07 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+3월 14, 2024 09:06:28.34 NEW SESSION
+3월 14, 2024 09:06:28.35 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 14, 2024 09:07:47.46 [13264:1652:0314/090747.459:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 14, 2024 12:24:43.84 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 14, 2024 13:19:53.64 [1144:5420:0314/131953.646:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 14, 2024 14:57:01.13 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 14, 2024 16:39:34.82 [1620:15332:0314/163934.823:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
