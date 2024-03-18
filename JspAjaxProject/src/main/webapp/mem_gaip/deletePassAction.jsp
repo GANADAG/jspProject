@@ -1,3 +1,4 @@
+<%@page import="mem_gaip.model.MemgaipDao"%>
 <%@page import="simpleboard.model.SimpleBoardDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -14,25 +15,25 @@
 <body>
 <%
 	//num,pass
-	String num=request.getParameter("num");
-	String pass=request.getParameter("pass");
+	String num=request.getParameter("m_num");
+	String pass=request.getParameter("m_pass");
 	
 	//dao
-	SimpleBoardDao dao=new SimpleBoardDao();
+	MemgaipDao dao=new MemgaipDao();
 	
 	//비번체크메서드
 	boolean check=dao.isPassCheck(num, pass);
 
-	 //ture면 삭제 후 목록
+	 //true면 삭제 후 목록
 	 //false면 경고창 후 back
 	 if(check)
 	 {
-		 dao.deleteBoard(num);
+		 dao.deleteMemgaip(num);
 		// response.sendRedirect("addform.jsp");
 		 %>
 		 <script type="text/javascript">
 		 	alert("삭제됨");
-		 	location.href='boardlist.jsp';
+		 	location.href='memlist.jsp';
 		 </script>
 	 <%}else{%>
 			 <script type="text/javascript">

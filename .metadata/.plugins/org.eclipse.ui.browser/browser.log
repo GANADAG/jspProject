@@ -248,3 +248,30 @@
 3월 14, 2024 13:19:53.64 [1144:5420:0314/131953.646:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
 3월 14, 2024 14:57:01.13 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 3월 14, 2024 16:39:34.82 [1620:15332:0314/163934.823:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+3월 15, 2024 10:04:51.18 NEW SESSION
+3월 15, 2024 10:04:51.20 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 15, 2024 10:35:54.56 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 15, 2024 11:35:57.20 [13224:10428:0315/113557.200:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+3월 15, 2024 13:19:57.22 [13224:15944:0315/131957.224:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 15, 2024 16:33:44.53 [13224:15944:0315/163344.533:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 15, 2024 16:34:12.32 [13224:15944:0315/163412.321:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 15, 2024 17:41:24.18 [13224:15944:0315/174124.187:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 15, 2024 17:41:48.03 [13224:15944:0315/174148.038:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 15, 2024 17:42:39.81 [13224:15944:0315/174239.811:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 15, 2024 17:43:47.53 [13224:15944:0315/174347.537:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 18, 2024 08:38:47.98 [13224:15944:0318/083847.977:ERROR:checkin_request.cc(243)] Check-in request got net error: -331
+3월 18, 2024 08:38:47.98 [13224:3404:0318/083847.978:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_NETWORK_IO_SUSPENDED)
+3월 18, 2024 08:38:49.99 [13224:15944:0318/083849.998:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 18, 2024 08:38:56.22 [13224:11296:0318/083856.221:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_NETWORK_CHANGED)
+
+3월 18, 2024 09:08:29.73 NEW SESSION
+3월 18, 2024 09:08:29.75 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 18, 2024 12:18:16.99 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 18, 2024 13:11:57.62 [6924:8008:0318/131157.625:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 18, 2024 13:12:20.13 [6924:8008:0318/131220.135:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 18, 2024 13:19:51.54 [6924:8008:0318/131951.543:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 18, 2024 17:05:21.63 [6924:9060:0318/170521.631:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 18, 2024 17:05:26.56 [6924:9060:0318/170526.567:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 18, 2024 17:06:27.44 [6924:9060:0318/170627.444:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
+3월 18, 2024 17:08:11.17 [6924:9060:0318/170811.172:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
