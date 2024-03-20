@@ -20,7 +20,7 @@
 <style>
 img {
 	width: 50px;
-	height: 50pxx;
+	height: 50px;
 	border: 1px solid gray;
 }
 </style>
@@ -76,9 +76,9 @@ img {
 				<td align="center" valign="middle"><%=sdf.format(dto.getGaipday()) %></td>
 				<td align="center" valign="middle">
 					<button type="button" class="btn btn-success"
-					onclick="location.href=''">수정</button>
+					onclick="location.href='updatePassForm.jsp?m_num=<%=dto.getM_num()%>'">수정</button>
 					<button type="button" class="btn btn-danger"
-					onclick="location.href='deletepassForm.jsp'">삭제</button>
+					onclick="location.href='deletepassForm.jsp?m_num=<%=dto.getM_num()%>'">삭제</button>
 				</td>
 			</tr>
 			<%}
