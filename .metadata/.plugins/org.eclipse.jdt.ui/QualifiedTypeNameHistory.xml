@@ -10,7 +10,6 @@
     <fullyQualifiedTypeName name="myinfo.db.MyInfoDto"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="quizshop.model.QuizShopDto"/>
-    <fullyQualifiedTypeName name="java.util.Vector"/>
     <fullyQualifiedTypeName name="uploadboard.data.UploadBoardDto"/>
     <fullyQualifiedTypeName name="simpleboard.model.SimpleBoardDto"/>
     <fullyQualifiedTypeName name="ajaxboard.AjaxBoardDto"/>
@@ -18,12 +17,17 @@
     <fullyQualifiedTypeName name="simpleboardanswer.model.SimpleAnswerDto"/>
     <fullyQualifiedTypeName name="mem_gaip.model.MemgaipDao"/>
     <fullyQualifiedTypeName name="mem_gaip.model.MemgaipDto"/>
+    <fullyQualifiedTypeName name="ajaxwrite.model.AjaxWriteDto"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="data.dto.MemberDto"/>
     <fullyQualifiedTypeName name="java.sql.Timestamp"/>
     <fullyQualifiedTypeName name="mysql.db.DbConnect"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="ajaxwrite.model.AjaxWriteDto"/>
+    <fullyQualifiedTypeName name="data.dao.GuestDao"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="data.dto.GuestDto"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
