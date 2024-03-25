@@ -8,7 +8,7 @@ public class GuestDto {
 	private String myid;
 	private String content;
 	private String photoname;
-	private String chu;
+	private int chu;
 	private Timestamp writeday;
 	
 	
@@ -36,10 +36,11 @@ public class GuestDto {
 	public void setPhotoname(String photoname) {
 		this.photoname = photoname;
 	}
-	public String getChu() {
+
+	public int getChu() {
 		return chu;
 	}
-	public void setChu(String chu) {
+	public void setChu(int chu) {
 		this.chu = chu;
 	}
 	public Timestamp getWriteday() {
