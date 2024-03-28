@@ -1,3 +1,5 @@
+<%@page import="data.dto.AnswerGuestDto"%>
+<%@page import="data.dao.AnswerGuestDao"%>
 <%@page import="data.dao.MemberDao"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="data.dto.GuestDto"%>
@@ -12,6 +14,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Gaegu&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <title>Insert title here</title>
 <style type="text/css">
@@ -21,7 +24,138 @@
      font-size: 10pt;
      color: gray;
   }
+  i.mod,i.del{
+     cursor: pointer;
+  }
 </style>
+
+<script type="text/javascript">
+   $(function(){
+	   
+	   $("span.likes").click(function(){
+		   
+		   var num=$(this).attr("num");
+		   //alert(num);
+		   var tag=$(this);
+		   
+		   $.ajax({
+			   type:"get",
+			   dataType:"json",
+			   url:"memberguest/updateincrechu.jsp",
+			   data:{"num":num},
+			   success:function(data){
+				   
+				  // alert(data.chu);
+				  tag.next().text(data.chu);
+				  
+				  //하트에 animate
+				  tag.next().next().animate({"font-size":"15px"},1000,function(){
+					  //애니메이션 끝난후
+					  $(this).css("font-size","0px");
+				  })
+			   }
+		   })
+	   });
+	   
+	   
+	   
+	   //삭제
+	   $("i.del").click(function(){
+		   var num=$(this).attr("num");
+		   var currentPage=$(this).attr("currentPage");
+		   
+		   //alert(num+","+currentPage);
+		   
+		   var yes=confirm("정말 삭제하시겠어요?");
+		   
+		   if(yes){
+			   location.href='memberguest/delete.jsp?num='+num+'&currentPage='+currentPage;
+		   }
+		   
+	   })
+	   
+	   
+	   
+	   //댓글부분은 무조건 처음에는 안보이게 처리
+	   $("div.answer").hide();
+	   //댓글 클릭시 댓글부분이 보였다 안보였다 하기
+	   $("span.answer").click(function(){
+		   //$("div.answer").toggle();
+		   $(this).parent().find("div.answer").toggle();
+	   });
+	   
+	   
+	   //댓글삭제
+	   $("i.adel").click(function(){
+		   
+		  
+		   var a=confirm("삭제하려면 [확인]을 눌러주세요");
+		   
+		   if(a){
+			   
+			   var idx=$(this).attr("idx");
+			   //alert(idx);
+			   
+			   $.ajax({
+				   type:"get",
+				   dataType:"html",
+				   url:"memberguest/deleteanswer.jsp",
+				   data:{"idx":idx},
+				   success:function(){
+					   location.reload();//새로고침
+				   }
+			   })
+			   
+		   }
+		   
+		   
+	   });
+	   
+	   //수정아이콘 누르면 모달창
+	   $("i.aedit").click(function(){
+		   
+		   var idx=$(this).attr("idx");
+		   //alert(idx);
+		   
+		   $("#idx").val(idx);
+		   
+		   $.ajax({
+			   
+			   type:"get",
+			   dataType:"json",
+			   url:"memberguest/answercontent.jsp",
+			   data:{"idx":idx},
+			   success:function(res){
+				   
+				   $("#idx").val(res.idx);
+				   $("#ucontent").val(res.story);
+			   }
+		   })
+	   });
+	   
+	   
+	   //댓글수정하기
+	   $("#btnupdate").click(function(){
+		   
+		  var idx= $("#idx").val();
+		  var content=$("#ucontent").val();
+		  
+		  //alert(idx+","+content);
+		  
+		  $.ajax({
+			  type:"post",
+			  url:"memberguest/updateanswer.jsp",
+			  dataType:"html",
+			  data:{"idx":idx,"content":content},
+			  success:function(){
+				  location.reload();
+			  }
+		  })
+	   });
+	   
+   });
+
+</script>
 </head>
 <body>
 <%
@@ -74,6 +208,15 @@
 	List<GuestDto>list=dao.getList(startNum, perPage);
 	
 	
+	/*마지막 페이지의 단 한개 남은 글을 삭제시 빈페이지가 남는다 그러므로 해결책은 그이전페이지로 가면 된다  */
+	if(list.size()==0 && currentPage!=1)
+	{%>
+		<script type="text/javascript">
+		location.href="index.jsp?main=memberguest/guestlist.jsp?currentPge=<%=currentPage-1%>";
+		</script>
+	<%}
+	
+	
 	SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm");
 	
 %>
@@ -108,8 +251,10 @@
     	      if(loginok!=null && dto.getMyid().equals(myid)){
     	    	  %>
     	    	 <span style="margin-left: 280px;">
-    	    	  <i class="bi bi-pencil-square"></i>
-    	    	  <i class="bi bi-trash"></i></span> 
+    	    	  <i class="bi bi-pencil-square mod" 
+    	    	  onclick="location.href='index.jsp?main=memberguest/updateform.jsp?num=<%=dto.getNum()%>&currentPage=<%=currentPage%>'"></i>
+    	    	  <i class="bi bi-trash del"
+    	    	  num=<%=dto.getNum() %>  currentPage=<%=currentPage %>></i></span> 
     	      <%}
     	    %>
     	    
@@ -119,7 +264,7 @@
     	  
     	  <tr height="120">
     	    <td>
-    	       <!-- 이미지가 null이 아닌경우만 출력 -->
+    	       <!-- 이미지가 null이아닌경우만 출력 -->
     	       <%
     	       if(dto.getPhotoname()!=null){%>
     	    	   
@@ -133,15 +278,115 @@
     	       <%=dto.getContent().replace("\n", "<br>")%>
     	    </td>
     	  </tr>
+    	  
+    	  <!-- 댓글&추천 -->
+    	  <tr>
+    	    <td>
+    	    
+    	    <%
+    	       //각방명록에 달린 댓글 목록가져오기
+    	       AnswerGuestDao adao=new AnswerGuestDao();
+    	       List<AnswerGuestDto> alist=adao.getAllAnswers(dto.getNum());
+    	    %>
+    	    
+    	    
+    	    
+    	    
+    	      <span class="answer" style="cursor: pointer;">댓글 <%=alist.size() %></span>
+    	      <span class="likes" style="margin-left: 20px; cursor: pointer;" num=<%=dto.getNum() %>>추천</span>
+    	      <span class="chu"><%=dto.getChu() %></span>
+    	      <i class="bi bi-heart-fill" style="font-size: 0px; color: red;"></i>
+    	      
+    	      
+    	      <div  class="answer">
+    	         <%
+    	           if(loginok!=null){%>
+    	        	   
+    	        	   <div class="answerform">
+    	        	      <form action="memberguest/answerinsert.jsp" method="post">
+    	        	        <input type="hidden" name="num" value="<%=dto.getNum()%>">
+    	        	        <input type="hidden" name="myid" value="<%=myid%>">
+    	        	        <input type="hidden" name="currentPage" value="<%=currentPage%>">
+    	        	        <table>
+    	        	           <tr>
+    	        	             <td width="500">
+    	        	               <textarea style="width: 480px; height: 70px;"
+    	        	               name="content" required="required"
+    	        	               class="form-control"></textarea>
+    	        	             </td>
+    	        	             <td>
+    	        	               <button type="submit" class="btn btn-info"
+    	        	               style="width: 70px; height: 70px;">등록</button>
+    	        	             </td>
+    	        	           </tr>
+    	        	        </table>
+    	        	      </form>
+    	        	   </div>
+    	          <% }
+    	         %>
+    	         
+    	         <div class="answerlist">
+    	             <table style="width: 500px;" >
+    	               <%
+    	                 for(AnswerGuestDto adto:alist)
+    	                 {%>
+    	                	 <tr>
+    	                	   <td>
+    	                	     <i class="bi bi-person-circle fs-2" style="color: gray;"></i>
+    	                	   </td>
+    	                	   <td>
+    	                	   
+    	                	   
+    	                	      <%
+    	                	        //작성자명
+    	                	        String aname=mdao.getName(adto.getMyid());
+    	                	      %>
+    	                	      <br>
+    	                	      <b><%=aname %></b>
+    	                	      &nbsp;
+    	                	      
+    	                	      <%
+    	                	        //글작성자와 댓글작성자가 같을경우
+    	                	        if(dto.getMyid().equals(adto.getMyid())){%>
+    	                	        	
+    	                	        	<span style="color: red;">작성자</span>
+    	                	        <%}
+    	                	      %>
+    	                	      
+    	                	      <span style="font-size: 9pt; color: gray; margin-left: 20px;">
+    	                	         <%=sdf.format(adto.getWriteday()) %>
+    	                	      </span>
+    	                	      
+    	                	      
+    	                	      <!-- 댓글 수정삭제는 본인만 보이게 -->
+    	                	      <%
+    	                	        if(loginok!=null && adto.getMyid().equals(myid)){%>
+    	                	        	
+    	                	        	<i class="aedit bi bi-pencil-square" idx="<%=adto.getIdx()%>"  data-bs-toggle="modal" data-bs-target="#myModal"></i>
+    	                	      		<i class="bi bi-trash adel" idx="<%=adto.getIdx()%>"></i>
+    	                	        <%}
+    	                	      %>
+    	                	      
+    	                	      <br>
+    	                	      <span style="font-family: 10pt;"><%=adto.getContent().replace("\n", "<br>") %></span>
+    	                	      
+    	                	   </td>
+    	                	 </tr>
+    	                 <%}
+    	               %>
+    	             </table>
+    	         </div>
+    	      </div>
+    	    </td>
+    	  </tr>
     	</table>
     <%}
   %>
   </div>
   
-  
-  <div style="width: 580px; text-align: center;">
-  
   <!-- 페이지 번호 출력 -->
+  <div style="width: 580px; text-align: center; margin: 50px 100px;">
+  
   <ul class="pagination justify-content-center">
   <%
   //이전
@@ -180,5 +425,42 @@
  
   
 </div>
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">댓글수정</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+         <div class="updateform d-inline-flex">
+            <input type="hidden" id="idx">
+            <input type="text" id="ucontent" class="form-control" style="width: 350px;">
+            <button type="button" class="btn btn-info" id="btnupdate"
+            style="margin-left: 10px;">댓글수정</button>
+         </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 </body>
 </html>

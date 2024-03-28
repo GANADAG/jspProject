@@ -11,7 +11,7 @@
 <title>Insert title here</title>
 <style type="text/css">
    .bi-camera{
-     color: gold;
+     color: purple;
    }
 </style>
 <script type="text/javascript">

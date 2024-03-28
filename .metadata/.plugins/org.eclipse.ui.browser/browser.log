@@ -437,3 +437,41 @@
 3월 25, 2024 09:37:35.90 [12776:8104:0325/093735.908:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
 3월 25, 2024 09:37:47.70 [12776:8104:0325/093747.701:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
 3월 25, 2024 09:39:10.21 [12776:8104:0325/093910.218:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+
+3월 26, 2024 09:16:00.47 NEW SESSION
+3월 26, 2024 09:16:00.49 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 26, 2024 11:17:13.30 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 26, 2024 12:20:22.13 [14628:11004:0326/122022.133:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+3월 26, 2024 13:24:14.41 [14628:7872:0326/132414.408:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 26, 2024 13:55:00.19 [14628:7872:0326/135500.197:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 26, 2024 13:55:20.60 [14628:7872:0326/135520.599:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 26, 2024 13:56:10.61 [14628:7872:0326/135610.617:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 26, 2024 17:33:49.74 [14628:7872:0326/173349.728:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 26, 2024 20:33:54.67 [14628:7872:0326/203354.672:ERROR:connection_factory_impl.cc(478)] ConnectionHandler failed with net error: -2
+3월 26, 2024 20:33:55.20 [14628:7872:0326/203355.203:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+3월 27, 2024 08:51:45.06 [14628:7872:0327/085145.059:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 27, 2024 08:51:45.79 [14628:13520:0327/085145.793:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_INTERNET_DISCONNECTED)
+
+3월 27, 2024 09:21:34.88 NEW SESSION
+3월 27, 2024 09:21:34.90 [13140:1248:0327/092134.883:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 27, 2024 09:21:34.90 [13140:1248:0327/092134.883:ERROR:checkin_request.cc(243)] Check-in request got net error: -106
+3월 27, 2024 09:21:39.97 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+3월 27, 2024 09:21:57.48 [13140:1248:0327/092157.479:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 27, 2024 09:22:00.11 [13140:6372:0327/092200.114:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Connection failed (-106).
+3월 27, 2024 09:22:00.95 [13140:1248:0327/092200.953:ERROR:checkin_request.cc(243)] Check-in request got net error: -106
+3월 27, 2024 09:22:46.48 [13140:1248:0327/092246.480:ERROR:checkin_request.cc(243)] Check-in request got net error: -106
+3월 27, 2024 09:22:48.22 [13140:1248:0327/092248.221:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 27, 2024 09:24:34.28 [13140:1248:0327/092434.286:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 27, 2024 09:24:41.69 [13140:1248:0327/092441.693:ERROR:checkin_request.cc(243)] Check-in request got net error: -106
+3월 27, 2024 09:28:21.36 [13140:1248:0327/092821.368:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 27, 2024 09:28:36.27 [13140:1248:0327/092836.278:ERROR:checkin_request.cc(243)] Check-in request got net error: -106
+3월 27, 2024 09:34:33.12 [13140:1248:0327/093433.118:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 27, 2024 09:36:25.24 [13140:1248:0327/093625.238:ERROR:checkin_request.cc(243)] Check-in request got net error: -106
+3월 27, 2024 09:44:33.12 [13140:1248:0327/094433.123:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 27, 2024 09:46:25.24 [13140:1248:0327/094625.243:ERROR:checkin_request.cc(243)] Check-in request got net error: -106
+3월 27, 2024 09:54:33.12 [13140:1248:0327/095433.124:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 27, 2024 09:56:25.24 [13140:1248:0327/095625.248:ERROR:checkin_request.cc(243)] Check-in request got net error: -106
+3월 27, 2024 10:04:33.12 [13140:1248:0327/100433.126:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+3월 27, 2024 13:24:52.52 [13140:1248:0327/132452.519:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+3월 27, 2024 17:52:35.05 [13140:1248:0327/175235.050:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+3월 27, 2024 20:52:38.68 [13140:1248:0327/205238.687:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
