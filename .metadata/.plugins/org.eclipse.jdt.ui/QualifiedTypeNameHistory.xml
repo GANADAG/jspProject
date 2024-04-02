@@ -26,13 +26,14 @@
     <fullyQualifiedTypeName name="data.dto.AnswerGuestDto"/>
     <fullyQualifiedTypeName name="data.dto.SmartDto"/>
     <fullyQualifiedTypeName name="data.dto.SemiiDto"/>
+    <fullyQualifiedTypeName name="java.lang.LinkageError"/>
+    <fullyQualifiedTypeName name="data.dto.SmartAnswerDto"/>
     <fullyQualifiedTypeName name="java.sql.Timestamp"/>
     <fullyQualifiedTypeName name="mysql.db.DbConnect"/>
-    <fullyQualifiedTypeName name="java.lang.LinkageError"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="data.dto.SmartAnswerDto"/>
+    <fullyQualifiedTypeName name="data.dto.ShopDto"/>
 </qualifiedTypeNameHistroy>

@@ -101,7 +101,7 @@
 				<input type="password" name="pass" class="form-control"
 				required="required" style="width: 120px;" placeholder="비밀번호">
 				<input type="password" name="pass2" class="form-control"
-				required="required" style="width: 120px; margin-left: 5px;"  placeholder="비밀번호 확인">
+				required="required" style="width: 150px; margin-left: 5px;"  placeholder="비밀번호 확인">
 			   </div>
 			</td>
 		</tr>

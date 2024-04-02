@@ -27,6 +27,18 @@
 		
 	}
 </style>
+<script type="text/javascript">
+	$(function(){
+		
+		$("a.goDetail").click(function()){
+			var shopnum=$(this).attr("shopnum");
+			 alert(shopnum);
+			
+			//디테일페이지로이동
+		    location.href="index.jsp=?shop/shopdetailpage.jsp"	
+		}
+	});
+</script>
 </head>
 <%
 	ShopDao dao=new ShopDao();
