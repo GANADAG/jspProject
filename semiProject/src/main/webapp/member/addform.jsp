@@ -76,7 +76,7 @@
 
 </head>
 <body>
-<div style="margin: 0px 100px; width: 350px;">
+<div style="margin: 50px 420px; width: 350px;">
 <form action="member/addaction.jsp" method="post" onsubmit="return check(this)">
 	<table class="table table-bordered" style="width: 500px;">
 	 	<caption align="top"><b>회원가입</b></caption>

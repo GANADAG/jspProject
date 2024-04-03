@@ -486,3 +486,7 @@
 4월 02, 2024 09:11:46.84 [4360:11200:0402/091146.845:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
 4월 02, 2024 09:12:13.93 [4360:11200:0402/091213.932:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
 4월 02, 2024 09:12:54.68 [4360:11200:0402/091254.683:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+4월 02, 2024 13:27:01.29 [4360:11200:0402/132701.289:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 02, 2024 13:55:57.22 [4360:11200:0402/135557.228:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+4월 02, 2024 13:56:00.32 [4360:11200:0402/135600.327:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+4월 02, 2024 15:35:51.03 [4360:14028:0402/153551.028:ERROR:interface_endpoint_client.cc(707)] Message 0 rejected by interface blink.mojom.WidgetHost
