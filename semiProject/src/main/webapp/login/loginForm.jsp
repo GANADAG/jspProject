@@ -38,19 +38,21 @@ div.logform {
 %>
 <body>
 	<!--11111  -->
-	<div style="margin: 50px 550px; width: 220px; "  class="logform">
+	<div style="margin: 50px 540px; width: 220px; "  class="logform">
 		<!-- <h2 class="alert alert-warning" align="center">회원 로그인</h2> -->
-		<br>
+		<h6 style="color: gray;">kyotoinside</h6>
+		
 		<form action="login/loginAction.jsp" method="post">
 			<input type="text" name="id" class="form-control"
-				style="width: 200px;"  placeholder="아이디" required="required"
+				style="width: 300px;"  placeholder="아이디" required="required"
 				value="<%=myid%>">
 			<br> <input type="password" name="pass" class="form-control"
-				style="width: 200px;" placeholder="패스워드" required="required">
+				style="width: 300px;" placeholder="패스워드" required="required">
+			<br><input type="checkbox" name="savechk" <%=save?"checked":"" %>>아이디 저장
 			<br>
 			<button type="submit" class="btn btn-success btn-lg"
-				style="width: 200px; height: 45px;">로그인</button>
-			<br> <input type="checkbox" name="savechk" <%=save?"checked":"" %>>아이디 저장
+				style="width: 300px; height: 45px;">로그인</button>
+			<br> 
 		</form>
 
 	</div>

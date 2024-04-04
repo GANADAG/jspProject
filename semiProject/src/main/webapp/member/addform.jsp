@@ -86,7 +86,7 @@
 				<div class="d-inline-flex">
 				<input type="text" name="id" id="id" maxlength="8" class="form-control"
 				required="required" style="width: 120px;">
-				<button type="button" class="btn btn-warning" id="btnIdCheck"
+				<button type="button" class="btn btn-danger" id="btnIdCheck"
 				style="margin-left:10px;">중복체크</button>
 				<span class="idsuccess" style="color:blue; margin-left:10px;"></span>
 				
@@ -147,8 +147,8 @@
 		
 		<tr>
 			<td colspan="2" align="center">
-				<button type="submit" class="btn btn-outline-info">저장하기</button>
-				<button type="reset" class="btn btn-outline-info">초기화</button>
+				<button type="submit" class="btn btn-outline-success">저장하기</button>
+				<button type="reset" class="btn btn-outline-success">초기화</button>
 				
 			</td> 
 		</tr>

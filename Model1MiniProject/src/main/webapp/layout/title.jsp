@@ -38,7 +38,7 @@
 <script type="text/javascript">
 	$(function(){
 		$("div.cart").click(function(){
-			location.herf="index.jsp?main=shop/mycart.jsp"
+			location.href="index.jsp?main=shop/mycart.jsp";
 		})
 	})
 </script>
